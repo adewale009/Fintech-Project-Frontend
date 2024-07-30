@@ -11,6 +11,10 @@ const Transaction: React.FC = () => {
     };
 
     fetchTransactions();
+
+    return () => {
+      setTransactions([]);
+    }
   }, []);
 
   return (
